@@ -33,6 +33,8 @@ vector<int> addNumbers(int n, int  m, vector<int > A, vector<int> B){
             curdigit = (curdigit + B[j]);
 
         res.push_back(curdigit%10);
+
+        //the curdigit is used for both carry as well as digits to be pushed to result
         curdigit = curdigit / 10;    
     }
     if(curdigit > 0)

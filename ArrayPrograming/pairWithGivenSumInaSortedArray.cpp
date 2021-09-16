@@ -27,8 +27,7 @@ Since 0 and 2 are the indices where the numbers 2 and 5 which add up to 7 are se
 using namespace std;
 
 bool twoSumInSortedArray(int n, vector<int> arr, int target){
-    int i=0;
-    int j=n-1;
+    int i=0,j=n-1;
     while(i<j){
         int sum = arr[i] + arr[j];
         if(target < sum) j--;
